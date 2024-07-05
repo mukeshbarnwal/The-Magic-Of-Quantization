@@ -10,7 +10,7 @@ Though quantization offer time and cost flexibility, we can guess that it wont b
 # How to Quantize
 Quantization can be performed using Hugging face Bitsandbytes class. We need to type the following code:
 
-from transformers import BitsAndBytesConfig
+*** from transformers import BitsAndBytesConfig
 
 BitsAndBytesConfig helps to reduce 32 bit to 16 or 8 bit and computations are then performed efficiently and memory usage is also lesser. 
 
