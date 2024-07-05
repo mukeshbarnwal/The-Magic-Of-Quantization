@@ -14,9 +14,8 @@ Quantization can be performed using Hugging face Bitsandbytes class. We need to 
 
 BitsAndBytesConfig helps to reduce 32 bit to 16 or 8 bit and computations are then performed efficiently and memory usage is also lesser. 
 
+quantization_config = BitsAndBytesConfig()
+model = AutoModelForCausalLM.from_pretrained('model-name', quantization_config=quantization_config)
 
-
-
-
-
+A BitsAndBytesConfig object is created to specify how we want to quantize any model. This configuration object is then passed to the from_pretrained method of AutoModelForCausalLM to apply the quantization settings. 
 
